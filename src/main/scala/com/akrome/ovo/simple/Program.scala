@@ -7,11 +7,12 @@ import java.time.temporal.ChronoUnit.DAYS
 
 import com.akrome.ovo.Types.AddressBookEntry.{DateOfBirth, FullName, Gender}
 import com.akrome.ovo.Types.{AbstractGender, AddressBookEntry}
+import com.akrome.ovo.shapeless.Program.args
 
 import scala.io.Source
 
 object Program extends App {
-  val lines = Source.fromFile("AddressBook.csv").getLines.toList
+  val lines = Source.fromFile(args(0)).getLines.toList
 
   val splitLines = lines.map(_.split("\\s*,\\s*"))
 

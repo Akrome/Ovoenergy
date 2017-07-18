@@ -5,7 +5,7 @@ import java.time.temporal.ChronoUnit.DAYS
 import com.akrome.ovo.Types.AbstractGender
 
 object Program extends App {
-  val (errors, addressBookEntries) = CsvFileReader.readLinesAs("AddressBook.csv")
+  val (errors, addressBookEntries) = CsvFileReader.readLinesAs(args(0))
 
   println(s"Errors: $errors")
 

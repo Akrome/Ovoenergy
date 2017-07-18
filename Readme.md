@@ -34,6 +34,10 @@ for the test, one on which git wouldn't install right .In the end I had to give 
 app, which I completely distrust and use the least possible, hence the single commit.
 I'll be happy to talk you through the development steps if you wish.
 
+To launch the program, go in the out/artifacts folder and do
+
+java -jar Ovoenergy.jar /fully/qualified/path/to/csv/file
+
 If you have any questions, I'm available to answer them :)
 
 Hope to see you soon,
