@@ -30,7 +30,7 @@ object Program extends App {
   val numberOfMales = addressBookEntries.count(_.gender.value == AbstractGender.MALE)
   println(s"1. $numberOfMales")
 
-  val oldestPerson = addressBookEntries.minBy(_.dateOfBirth.value.toEpochDay)
+  val oldestPerson = addressBookEntries.minBy(_.dateOfBirth.value.toEpochDay).fullName.value
   println(s"2. $oldestPerson")
 
   val bill = addressBookEntries.find(_.fullName.value.startsWith("Bill")).get
