@@ -11,7 +11,7 @@ object Program extends App {
   println(s"1. $numberOfMales")
 
   val oldestPerson = addressBookEntries.minBy(_.dateOfBirth.value.toEpochDay)
-  println(s"2.: $oldestPerson")
+  println(s"2. $oldestPerson")
 
   val bill = addressBookEntries.find(_.fullName.value.startsWith("Bill")).get
   val paul = addressBookEntries.find(_.fullName.value.startsWith("Paul")).get
